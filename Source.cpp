@@ -18,22 +18,22 @@ const  float PI = 3.14159;
 int main()
 {
 
-	float radius, area, circumference;
+	float miles, kilometers;
 	
 	//Display purpose of the program
 	cout << " ******************************************"<<endl;
-	cout << " This program takes in radius to compute area of circle" <<endl;
+	cout << " This will convert miles to kilometers" <<endl;
 	cout << " ******************************************\n\n";
 	
 	//Get user input
-	cout << "Please input radius: ";
-	cin >> radius;
+	cout << "How many miles should be converted ";
+	cin >> miles;
 	
 	//Compute area to PI*radius*radius
-	area = PI* radius *radius; 
+	kilometers = miles * 1.6;
 	
 	//Display the area 
-	cout << " The area is = " << area << "\n\n";
+	cout << " The converted number = " << kilometers << "\n\n";
 	cout << "Program has ended"<<endl;
 
 	system("pause");
