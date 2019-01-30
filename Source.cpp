@@ -6,7 +6,7 @@
 * Email: russno76@students.rowan.edu
 ***********************************************
 * Purpose:
-*  This program calculates circumfrence of a circle
+*  This program is mess
 ***********************************************/
 
 #include <iostream>
@@ -34,9 +34,25 @@ int main()
 	
 	//Display the area 
 	cout << " The circumfrence is " << circ << "\n\n";
-	cout << "Program has ended"<<endl;
+	
 
 	system("pause");
-	
+
+	double km, m, cm,miles, mm;
+	//display reason for program
+	cout <<"\n\n This part of the program will display an inputed number of miles in km, m, cm, and mm" << endl;
+	//request input
+	cout <<"\n\n Please input the amount of miles to be converted";
+	cin >> miles;
+	//calculates the conversions
+	km = miles * 1.6;
+	m = miles * 1.6 * .01;
+	cm = m * .01;
+	mm = m * .001;
+
+	//Displays all the conversions
+	cout <<"\n\n the converted numbers are \n\n" <<km<< "km \n\n" << m<< "m \n\n" <<cm<< "cm \n\n" <<mm<< "mm \n\n";
+	cout << "Program has ended" << endl;
+	system("pause");
 	return 0;
 }
