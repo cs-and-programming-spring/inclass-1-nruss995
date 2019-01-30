@@ -2,11 +2,11 @@
 
 
 /***********************************************
-* Name: Takeshwari Kamal
-* Email: kamalt4@students.rowan.edu
+* Name: Noah Russ
+* Email: russno76@students.rowan.edu
 ***********************************************
 * Purpose:
-*  This program calculates area of circle
+*  This program calculates circumfrence of a circle
 ***********************************************/
 
 #include <iostream>
@@ -18,22 +18,22 @@ const  float PI = 3.14159;
 int main()
 {
 
-	float miles, kilometers;
+	float radius, circ;
 	
 	//Display purpose of the program
 	cout << " ******************************************"<<endl;
-	cout << " This will convert miles to kilometers" <<endl;
+	cout << " This will find the circumfrence of a circle" << endl;
 	cout << " ******************************************\n\n";
 	
 	//Get user input
-	cout << "How many miles should be converted ";
-	cin >> miles;
+	cout << "Please input the radius of the circle";
+	cin >> radius;
 	
 	//Compute area to PI*radius*radius
-	kilometers = miles * 1.6;
+	circ = 2 * PI * radius;
 	
 	//Display the area 
-	cout << " The converted number = " << kilometers << "\n\n";
+	cout << " The circumfrence is " << circ << "\n\n";
 	cout << "Program has ended"<<endl;
 
 	system("pause");
